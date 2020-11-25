@@ -9,7 +9,7 @@ An app for a brand’s YouTube channel. In the app user should be able to play t
   
 ## Screenshot
 
-![Flutter Youtube Channel Naimur Hasan](https://raw.githubusercontent.com/naimurhasan/flutter_tvmaze_schedule/master/_screenshots/screenshot_all_screen.jpg)
+![Flutter Youtube Channel Naimur Hasan](https://raw.githubusercontent.com/naimurhasan/flutter_youtube_channel_app/master/_screenshot.jpg)
 
 
   
