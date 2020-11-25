@@ -1,16 +1,21 @@
-# youtube_channel
+# Flutter App For Youtube Channel
 
-A new Flutter application for youtube channel.
+An app for a brand’s YouTube channel. In the app user should be able to play the latest videos uploaded on the channel.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Screenshot
 
-A few resources to get you started if this is your first Flutter project:
+![Flutter Youtube Channel Naimur Hasan](https://raw.githubusercontent.com/naimurhasan/flutter_tvmaze_schedule/master/_screenshots/screenshot_all_screen.jpg)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Description
+
+Gets TV show list from internet (tvmaze api) and show it in the ui.
+
+![Flutter TVMaze Diagram Naimur Hasan](https://raw.githubusercontent.com/naimurhasan/flutter_youtube_channel_app/master/_screenshot.jpg)
+
+  ### Features
+  - Splash Screen
+  - Youtube Video List
+  - Player Screen
+  
