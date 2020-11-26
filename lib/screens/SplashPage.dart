@@ -41,7 +41,7 @@ class _SplashPageState extends State<SplashPage>
         child: Opacity(
           opacity: _controller.value,
           child: Image.asset(
-            'assets/images/grameenphone.png',
+            'assets/images/riseuplabs.png',
           ),
         ),
       ),

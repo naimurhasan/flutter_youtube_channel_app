@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart' show CupertinoActivityIndicator;
 import 'package:flutter/material.dart';
 import './VideoPage.dart';
 import '../services/api_service.dart';
@@ -25,8 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   _initChannel() async {
     Channel channel = await APIService.instance
-        .fetchChannel(channelId: 'UCQ5bpR5wfI-cOamTgWyYjow');
-    // .fetchChannel(channelId: 'UC2vQAoYX1nHuMwChkq4zZ_g');
+        .fetchChannel(channelId: 'UC2vQAoYX1nHuMwChkq4zZ_g');
     setState(() {
       _channel = channel;
     });
@@ -158,12 +158,11 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Image.asset('assets/images/grameenphone.png'),
+              Image.asset('assets/images/riseuplabs.png'),
               Container(
                 alignment: Alignment.topRight,
                 child: Text(
-                  '',
-                  // 'Grameenphone',
+                  'RiseUp Labs',
                   style: Theme.of(context).textTheme.headline4.copyWith(
                         color: Colors.white,
                       ),
@@ -184,8 +183,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   return AlertDialog(
                     title: Text('About Us'),
                     content: Text(
-                        // 'We design & develop intelligent, innovative and sustainable web systems, mobile apps, games and interactive entertainment experiences on multiple platforms to give solutions.'
-                        'Welcome to the fan made YouTube Channel App of Grameenphone where we promise to bring & share the best of everything so that you can Go Beyond...'),
+                        'We design & develop intelligent, innovative and sustainable web systems, mobile apps, games and interactive entertainment experiences on multiple platforms to give solutions.'),
                     actions: [
                       FlatButton(
                           child: Text('Okay'),
@@ -221,11 +219,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 return false;
               },
               child: ListView.builder(
-                itemCount: 1 + _channel.videos.length,
+                itemCount: 2 + _channel.videos.length,
                 itemBuilder: (BuildContext context, int index) {
                   if (index == 0) {
                     return _buildProfileInfo();
                   }
+                  if (index == _channel.videos.length + 1) {
+                    return CupertinoActivityIndicator();
+                  }
+
                   Video video = _channel.videos[index - 1];
                   return _buildVideo(video);
                 },
