@@ -1,4 +1,4 @@
-![Flutter Youtube Channel Naimur Hasan](https://raw.githubusercontent.com/naimurhasan/flutter_youtube_channel_app/master/_screenshot.jpg)
+![Flutter Youtube Channel Naimur Hasan](https://raw.githubusercontent.com/naimurhasan/flutter_youtube_channel_app/riseup_labs/_screenshot.jpg)
 
 # Flutter App For Youtube Channel
 
