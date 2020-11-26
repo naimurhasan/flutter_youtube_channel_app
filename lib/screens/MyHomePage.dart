@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart' show CupertinoActivityIndicator;
 import 'package:flutter/material.dart';
 import './VideoPage.dart';
 import '../services/api_service.dart';
@@ -218,11 +219,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 return false;
               },
               child: ListView.builder(
-                itemCount: 1 + _channel.videos.length,
+                itemCount: 2 + _channel.videos.length,
                 itemBuilder: (BuildContext context, int index) {
                   if (index == 0) {
                     return _buildProfileInfo();
                   }
+                  if (index == _channel.videos.length + 1) {
+                    return CupertinoActivityIndicator();
+                  }
+
                   Video video = _channel.videos[index - 1];
                   return _buildVideo(video);
                 },
